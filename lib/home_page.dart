@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
               child: CircularProgressIndicator(),
             );
           } else if (snapshot.hasData) {
-            return const Dashboard();
+            return const EmailVerifiedDashboard();
           } else if (snapshot.hasError) {
             return Center(
               child: Text(snapshot.error.toString()),

@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_app/commons/commons.dart';
-import 'package:firebase_auth_app/dashboard.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../phone_verified_dashboard.dart';
 import 'mobile_add_page.dart';
 
 class OTPpage extends StatefulWidget {
@@ -83,7 +83,8 @@ class _OTPpageState extends State<OTPpage> {
                             );
 
                             // ignore: use_build_context_synchronously
-                            pushNavigation(context, const Dashboard());
+                            pushNavigation(
+                                context, const PhoneVerifiedDashboard());
                           } catch (e) {
                             setState(() {
                               isLoading = false;
