@@ -1,9 +1,8 @@
+import 'package:firebase_auth_app/features/auth/auth_service.dart';
 import 'package:firebase_auth_app/features/google_auth/provider/google_provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import 'home.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +23,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.green,
         ),
-        home: const Home(),
+        home: AuthService().handleAuthState(),
       ),
     );
   }

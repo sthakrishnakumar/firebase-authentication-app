@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_auth_app/dashboard.dart';
+import 'package:firebase_auth_app/email_verified_dashboard.dart';
 import 'package:firebase_auth_app/home.dart';
 import 'package:flutter/material.dart';
 
