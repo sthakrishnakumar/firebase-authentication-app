@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_app/commons/commons.dart';
@@ -32,7 +31,6 @@ class _OTPpageState extends State<OTPpage> {
 
   void listenOTP() async {
     await SmsAutoFill().listenForCode();
-    log("OTP Listen Called");
   }
 
   @override
@@ -52,13 +50,16 @@ class _OTPpageState extends State<OTPpage> {
                 currentCode: codeValue,
                 decoration: const UnderlineDecoration(
                   colorBuilder: FixedColorBuilder(Colors.grey),
+                  textStyle: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 20,
+                  ),
                 ),
                 onCodeChanged: (code) {
                   setState(() {
                     codeValue = code.toString();
                   });
                 },
-              
               ),
               const SizedBox(
                 height: 20,
