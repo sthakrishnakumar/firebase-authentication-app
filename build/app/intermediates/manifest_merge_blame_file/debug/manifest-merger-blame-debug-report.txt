@@ -205,59 +205,59 @@
 130            android:initOrder="100" />
 130-->[com.google.firebase:firebase-common:20.1.2] C:\Users\sthak\.gradle\caches\transforms-3\51d5a07600719f8767e44db6f2a9636e\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:31:13-36
 131
-132        <receiver
-132-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:29:9-33:20
-133            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-133-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:30:13-85
-134            android:enabled="true"
-134-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:31:13-35
-135            android:exported="false" >
-135-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:32:13-37
-136        </receiver>
-137
-138        <service
-138-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:35:9-38:40
-139            android:name="com.google.android.gms.measurement.AppMeasurementService"
-139-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:36:13-84
-140            android:enabled="true"
-140-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:37:13-35
-141            android:exported="false" />
-141-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:38:13-37
-142        <service
-142-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:39:9-43:72
-143            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-143-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:40:13-87
-144            android:enabled="true"
-144-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:41:13-35
-145            android:exported="false"
-145-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:42:13-37
-146            android:permission="android.permission.BIND_JOB_SERVICE" />
-146-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:43:13-69
-147
-148        <activity
-148-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:23:9-27:75
-149            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-149-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:24:13-93
-150            android:excludeFromRecents="true"
-150-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:25:13-46
-151            android:exported="false"
-151-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:26:13-37
-152            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-152-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:27:13-72
-153        <!--
-154            Service handling Google Sign-In user revocation. For apps that do not integrate with
-155            Google Sign-In, this service will never be started.
-156        -->
+132        <activity
+132-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:23:9-27:75
+133            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+133-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:24:13-93
+134            android:excludeFromRecents="true"
+134-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:25:13-46
+135            android:exported="false"
+135-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:26:13-37
+136            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+136-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:27:13-72
+137        <!--
+138            Service handling Google Sign-In user revocation. For apps that do not integrate with
+139            Google Sign-In, this service will never be started.
+140        -->
+141        <service
+141-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:33:9-37:51
+142            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+142-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
+143            android:exported="true"
+143-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:35:13-36
+144            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+144-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
+145            android:visibleToInstantApps="true" />
+145-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:37:13-48
+146
+147        <receiver
+147-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:29:9-33:20
+148            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+148-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:30:13-85
+149            android:enabled="true"
+149-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:31:13-35
+150            android:exported="false" >
+150-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:32:13-37
+151        </receiver>
+152
+153        <service
+153-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:35:9-38:40
+154            android:name="com.google.android.gms.measurement.AppMeasurementService"
+154-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:36:13-84
+155            android:enabled="true"
+155-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:37:13-35
+156            android:exported="false" />
+156-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:38:13-37
 157        <service
-157-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:33:9-37:51
-158            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-158-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:34:13-89
-159            android:exported="true"
-159-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:35:13-36
-160            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-160-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:36:13-107
-161            android:visibleToInstantApps="true" />
-161-->[com.google.android.gms:play-services-auth:20.0.1] C:\Users\sthak\.gradle\caches\transforms-3\66e089c069618d46ecbcfc30035e5ab3\transformed\jetified-play-services-auth-20.0.1\AndroidManifest.xml:37:13-48
+157-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:39:9-43:72
+158            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+158-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:40:13-87
+159            android:enabled="true"
+159-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:41:13-35
+160            android:exported="false"
+160-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:42:13-37
+161            android:permission="android.permission.BIND_JOB_SERVICE" />
+161-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\sthak\.gradle\caches\transforms-3\396b999dd9ba765fee761d240c1cf0d5\transformed\jetified-play-services-measurement-21.1.1\AndroidManifest.xml:43:13-69
 162
 163        <activity
 163-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sthak\.gradle\caches\transforms-3\19fea4fb28dedd992824e13cc158e7a1\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45

@@ -122,6 +122,10 @@ path
 2.12
 file:///C:/Users/sthak/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.1/
 file:///C:/Users/sthak/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.1/lib/
+pin_input_text_field
+2.13
+file:///C:/Users/sthak/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/pin_input_text_field-4.2.0/
+file:///C:/Users/sthak/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/pin_input_text_field-4.2.0/lib/
 plugin_platform_interface
 2.12
 file:///C:/Users/sthak/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.1.2/
@@ -134,6 +138,10 @@ quiver
 2.12
 file:///C:/Users/sthak/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.1.0/
 file:///C:/Users/sthak/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.1.0/lib/
+sms_autofill
+2.12
+file:///C:/Users/sthak/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/sms_autofill-2.2.0/
+file:///C:/Users/sthak/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/sms_autofill-2.2.0/lib/
 source_span
 2.14
 file:///C:/Users/sthak/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.2/

@@ -9,7 +9,9 @@ class PhoneVerifiedDashboard extends StatelessWidget {
         title: const Text('Phone Verified Dashboard'),
       ),
       body: Column(
-        children: const [],
+        children: const [
+          Text('This is Phone Verified Dashboard'),
+        ],
       ),
     );
   }

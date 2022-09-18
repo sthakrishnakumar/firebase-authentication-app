@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_app/commons/commons.dart';
 import 'package:flutter/material.dart';
+import 'package:sms_autofill/sms_autofill.dart';
 
 import '../../../../phone_verified_dashboard.dart';
 import 'mobile_add_page.dart';
@@ -19,11 +20,17 @@ class _OTPpageState extends State<OTPpage> {
   final FirebaseAuth auth = FirebaseAuth.instance;
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   bool isLoading = false;
+  String codeValue = "";
 
   @override
   void initState() {
     otpController = TextEditingController();
+    listenOTP();
     super.initState();
+  }
+
+  void listenOTP() async {
+    await SmsAutoFill().listenForCode();
   }
 
   @override
@@ -39,18 +46,36 @@ class _OTPpageState extends State<OTPpage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextFormField(
-                maxLength: 6,
-                keyboardType: TextInputType.phone,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: 'Enter OTP ',
+              PinFieldAutoFill(
+                currentCode: codeValue,
+                decoration: const UnderlineDecoration(
+                  colorBuilder: FixedColorBuilder(Colors.grey),
+                  textStyle: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 20,
+                  ),
                 ),
-                controller: otpController,
-                validator: (otp) {
-                  return otpController.text.length == 6 ? null : 'Invalid OTP';
+                onCodeChanged: (code) {
+                  setState(() {
+                    codeValue = code.toString();
+                  });
                 },
               ),
+              const SizedBox(
+                height: 20,
+              ),
+              // TextFormField(
+              //   maxLength: 6,
+              //   keyboardType: TextInputType.phone,
+              //   decoration: const InputDecoration(
+              //     border: OutlineInputBorder(),
+              //     hintText: 'Enter OTP ',
+              //   ),
+              //   controller: otpController,
+              //   validator: (otp) {
+              //     return otpController.text.length == 6 ? null : 'Invalid OTP';
+              //   },
+              // ),
               const SizedBox(
                 height: 20,
               ),
@@ -60,43 +85,43 @@ class _OTPpageState extends State<OTPpage> {
                     )
                   : ElevatedButton(
                       onPressed: () async {
-                        if (formKey.currentState!.validate()) {
+                        // if (formKey.currentState!.validate()) {
+                        setState(() {
+                          isLoading = true;
+                        });
+                        try {
+                          PhoneAuthCredential credential =
+                              PhoneAuthProvider.credential(
+                            verificationId: MobileAddPage.verify,
+                            smsCode: codeValue,
+                          );
+
+                          // Sign the user in (or link) with the credential
+                          await auth.signInWithCredential(credential);
+                          Timer(
+                            const Duration(seconds: 2),
+                            () {
+                              setState(() {
+                                isLoading = false;
+                              });
+                            },
+                          );
+
+                          // ignore: use_build_context_synchronously
+                          pushNavigation(
+                              context, const PhoneVerifiedDashboard());
+                        } catch (e) {
                           setState(() {
-                            isLoading = true;
+                            isLoading = false;
+                            otpController.clear();
                           });
-                          try {
-                            PhoneAuthCredential credential =
-                                PhoneAuthProvider.credential(
-                              verificationId: MobileAddPage.verify,
-                              smsCode: otpController.text,
-                            );
-
-                            // Sign the user in (or link) with the credential
-                            await auth.signInWithCredential(credential);
-                            Timer(
-                              const Duration(seconds: 2),
-                              () {
-                                setState(() {
-                                  isLoading = false;
-                                });
-                              },
-                            );
-
-                            // ignore: use_build_context_synchronously
-                            pushNavigation(
-                                context, const PhoneVerifiedDashboard());
-                          } catch (e) {
-                            setState(() {
-                              isLoading = false;
-                              otpController.clear();
-                            });
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(
-                                content: Text('Invalid OTP'),
-                              ),
-                            );
-                          }
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text('Invalid OTP'),
+                            ),
+                          );
                         }
+                        // }
                       },
                       child: const Text('Verify OTP'),
                     ),
