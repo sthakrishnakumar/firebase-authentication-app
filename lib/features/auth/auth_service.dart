@@ -11,10 +11,7 @@ class AuthService {
       builder: ((context, snapshot) {
         if (snapshot.hasData) {
           return const EmailVerifiedDashboard();
-        } else if (snapshot.hasError) {
-          return const Home();
-        }
-        {
+        } else {
           return const Home();
         }
       }),

@@ -8,14 +8,8 @@ class PhoneVerifiedDashboard extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Phone Verified Dashboard'),
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(left: 120),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Text('Phone Verified'),
-          ],
-        ),
+      body: Column(
+        children: const [],
       ),
     );
   }

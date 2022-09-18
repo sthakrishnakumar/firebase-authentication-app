@@ -1,13 +1,13 @@
-#Fri Sep 16 10:58:45 NPT 2022
-path.4=0/classes.dex
-path.3=9/classes.dex
-path.2=1/classes.dex
+#Sun Sep 18 14:57:23 NPT 2022
+path.4=9/classes.dex
+path.3=1/classes.dex
+path.2=0/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.4=C\:\\Flutter Projects\\Firebase\\firebase_auth_app\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
-base.3=C\:\\Flutter Projects\\Firebase\\firebase_auth_app\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-base.2=C\:\\Flutter Projects\\Firebase\\firebase_auth_app\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.1=C\:\\Flutter Projects\\Firebase\\firebase_auth_app\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.4=C\:\\Flutter Projects\\Firebase\\firebase_auth_app\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.3=C\:\\Flutter Projects\\Firebase\\firebase_auth_app\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.2=C\:\\Flutter Projects\\Firebase\\firebase_auth_app\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Flutter Projects\\Firebase\\firebase_auth_app\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
 base.0=C\:\\Flutter Projects\\Firebase\\firebase_auth_app\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex

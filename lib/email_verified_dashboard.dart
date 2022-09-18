@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_app/features/auth/auth_service.dart';
 import 'package:flutter/material.dart';
@@ -6,7 +8,9 @@ class EmailVerifiedDashboard extends StatelessWidget {
   const EmailVerifiedDashboard({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser;
+    final user = FirebaseAuth.instance.currentUser!;
+
+    log(user.photoURL!);
 
     return Scaffold(
       appBar: AppBar(
@@ -17,20 +21,17 @@ class EmailVerifiedDashboard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            if (user!.photoURL != null)
-              CircleAvatar(
-                radius: 40,
-                backgroundImage: NetworkImage(user.photoURL!),
-              ),
-            if (user.photoURL == null)
-              const CircleAvatar(
-                radius: 40,
-                backgroundImage: NetworkImage(''),
-              ),
+            CircleAvatar(
+              backgroundImage: NetworkImage(user.photoURL!),
+            ),
             const SizedBox(
               height: 20,
             ),
             Text('Name: ${user.displayName}'),
+            const SizedBox(
+              height: 20,
+            ),
+            Text('Photo Url: ${user.photoURL}'),
             const SizedBox(
               height: 20,
             ),
