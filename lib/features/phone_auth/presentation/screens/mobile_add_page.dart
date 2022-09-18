@@ -20,6 +20,15 @@ class _MobileAddPageState extends State<MobileAddPage> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   bool isLoading = false;
 
+  // void submit() async {
+  //   var appSignatureID = await SmsAutoFill().getAppSignature;
+  //   Map sendOTPData = {
+  //     "mobile_number": phoneController.text,
+  //     "app_signature_id": appSignatureID,
+  //   };
+  //   print(sendOTPData);
+  // }
+
   @override
   void initState() {
     phoneController = TextEditingController();
@@ -67,6 +76,7 @@ class _MobileAddPageState extends State<MobileAddPage> {
                           setState(() {
                             isLoading = true;
                           });
+                          // submit();
                           await FirebaseAuth.instance.verifyPhoneNumber(
                             phoneNumber: '+977${phoneController.text}',
                             verificationCompleted:
